@@ -1,14 +1,12 @@
 import React from "react";
 import {
-  SafeAreaView,
-  Text,
   Image,
   View
 } from 'react-native'
 import { styles } from "../styles/incio";
 import Botao from "../components/botao";
 
-const Inicio = () => {
+const Inicio = ({navigation}) => {
 
   return (
     <View style={styles.container}>
@@ -21,7 +19,7 @@ const Inicio = () => {
       <View style={styles.viewBotoes}>
         <Botao
           textoBotao="Jogar online"
-          onPress={() => console.log("jogar online")}
+          onPress={() => navigation.navigate("Lista")}
         />
         <Botao
           textoBotao="Jogar offline"

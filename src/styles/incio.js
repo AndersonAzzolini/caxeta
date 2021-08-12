@@ -10,15 +10,16 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   viewBotoes: {
-    justifyContent: "center",
-    flex: 0.45
+    justifyContent: "space-evenly",
+    flex: 0.8
   },
   viewImagem: {
-    flex: 0.55
+    flex: 0.8
   },
   imagem: {
     flex: 1,
-    width: Dimensions.get("window").width,
+    width: Dimensions.get("window").width * 0.7,
+    height: Dimensions.get("window").height * 0.7
   },
 })
 
